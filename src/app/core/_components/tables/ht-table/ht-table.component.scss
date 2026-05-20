@@ -6,6 +6,77 @@
   margin-top: 4px;
 }
 
+.table-footer-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.table-actions {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+}
+
+.table-action-wrapper {
+  min-width: 0;
+}
+
+.table-action-wrapper.right-aligned {
+  margin-left: auto;
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.table-scroll-container {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.hashtopolis-table {
+  width: 100%;
+  min-width: max-content;
+}
+
+.filter-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.filter-input-field {
+  min-width: clamp(12rem, 20vw, 18rem);
+}
+
+@media (max-width: 1100px) {
+  .table-footer-actions {
+    flex-wrap: wrap;
+    row-gap: 8px;
+  }
+
+  .table-action-wrapper.right-aligned {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .filter-container {
+    width: 100%;
+  }
+
+  .filter-input-field {
+    min-width: 0;
+    width: 100%;
+  }
+}
+
 // Filter error state styling
 .filter-error {
   .mat-mdc-form-field-focus-overlay {
@@ -38,4 +109,3 @@
   padding-left: 16px;
   display: block;
 }
-
